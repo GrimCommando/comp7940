@@ -3,7 +3,7 @@ import requests
 
 def debug(x):
     # Debug
-    print("Debug")
+    #print("Debug")
     for i in x:
         print("parse " + str(i))
 
@@ -34,7 +34,7 @@ def main():
     print(r.json())
     text = r.json()['users']
     
-    #debug(text)
+    debug(text)
     
     # call the function convert_number
     # convert all elements (except the first one) into number and return it as a list
@@ -53,7 +53,7 @@ def main():
     sum = 0
     for i in z:
         if type(i) != str:
-            print(i)
+            #print(i)
             sum = sum + i
             print("sum = " + str(sum) + "; i =" + str(i))
     print ("Total = " + str(sum))
