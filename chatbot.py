@@ -12,7 +12,6 @@ import redis
 
 global redis
 
-
 def main():
     # Load your token and create an Updater for your Bot
     #config = configparser.ConfigParser()
