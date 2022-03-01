@@ -10,6 +10,7 @@ import logging
 # Redis Database 
 import redis
 
+
 global redis
 
 
