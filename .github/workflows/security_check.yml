@@ -13,11 +13,11 @@ name: 'Python Safety Check'
 #  icon: 'shield'
 #  color: 'green'
 
-#on:
-on: [push]  
-#  push:
-#    branches:
-#      - master
+on:
+#on: [push]  
+  push:
+    branches:
+      - main
 
 
 env:
@@ -27,8 +27,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Check out master
-        uses: actions/checkout@master
+      - name: Check out main
+        uses: actions/checkout@main
 
       - name: Security vulnerabilities scan
-        uses: aufdenpunkt/python-safety-check@master
+        uses: aufdenpunkt/python-safety-check@main
