@@ -13,10 +13,11 @@ branding:
   icon: 'shield'
   color: 'green'
 
-on:
-  push:
-    branches:
-      - master
+#on:
+on: [push]  
+#  push:
+#    branches:
+#      - master
 
 
 env:
