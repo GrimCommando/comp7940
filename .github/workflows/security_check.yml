@@ -1,6 +1,7 @@
 name: 'Python Safety Check'
 description: 'Helps to find known security vulnerabilities in your python application'
 author: aufdenpunkt
+
 inputs:
   safety_args:
     description: Optional Safety script parameters. (e.g. --ignore=1234 or -i 1234)
@@ -16,6 +17,7 @@ on:
   push:
     branches:
       - master
+
 
 env:
   DEP_PATH: requirements.txt
