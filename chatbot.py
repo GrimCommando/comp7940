@@ -44,7 +44,6 @@ def main():
     updater.start_polling()
     updater.idle()
 
-
 def echo(update, context):
     reply_message = update.message.text.upper()
     logging.info("Update: " + str(update))
